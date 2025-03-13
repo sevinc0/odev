@@ -1,0 +1,5 @@
+def ikiyle_carp(lst):
+    return [x * 2 for x in lst]
+
+lst = list(map(int, input("Bir liste girin (virgülle ayırarak): ").split(',')))
+print(f"Yeni liste: {ikiyle_carp(lst)}")
