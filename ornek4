@@ -1,0 +1,8 @@
+def sirala(lst):
+    print(f"Küçükten büyüğe sıralama: {sorted(lst)}")
+  
+    print(f"Büyükten küçüğe sıralama: {sorted(lst, reverse=True)}")
+
+
+lst = list(map(int, input("Bir liste girin (virgülle ayırarak): ").split(',')))
+sirala(lst)
