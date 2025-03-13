@@ -1,0 +1,8 @@
+import random
+
+def rastgele_karistir(lst):
+    random.shuffle(lst)
+    return lst
+
+lst = list(map(int, input("Bir liste girin (virgülle ayırarak): ").split(',')))
+print(f"Karıştırılmış liste: {rastgele_karistir(lst)}")
