@@ -1,0 +1,7 @@
+def en_buyuk_ikinci(lst):
+    lst = list(set(lst))  
+    lst.sort(reverse=True) 
+    return lst[1] if len(lst) > 1 else None  
+
+lst = list(map(int, input("Bir liste girin (virgülle ayırarak): ").split(',')))
+print(f"En büyük ikinci sayı: {en_buyuk_ikinci(lst)}")
