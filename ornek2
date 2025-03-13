@@ -1,0 +1,9 @@
+def tekrarlanan_elemanlar(lst):
+    for eleman in set(lst):
+        count = lst.count(eleman)
+        if count > 1:
+            print(f"Eleman: {eleman}, Tekrar Sayısı: {count}")
+
+
+lst = list(map(int, input("Bir liste girin (virgülle ayırarak): ").split(',')))
+tekrarlanan_elemanlar(lst)
